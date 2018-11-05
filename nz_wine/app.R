@@ -8,12 +8,16 @@
 #
 
 library(shiny)
+library(tidyverse)
+library(readxl)
+
+wine <- read_rds("../nz_wine.rds")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
-   titlePanel("Old Faithful Geyser Data"),
+   titlePanel("New Zealand Wine"),
    
    # Sidebar with a slider input for number of bins 
    sidebarLayout(
